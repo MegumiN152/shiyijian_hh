@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee"
+         version="3.0">
+    <display-name>restful</display-name>
+    <context-param>
+        <param-name>resteasy.resources</param-name>
+        <param-value>restful.api.UserAPI,restful.api.TypeAPI,restful.api.MySuitAPI,restful.api.SuitAPI</param-value>
+    </context-param>
+
+
+<!--拦截器-->
+    <context-param>
+        <param-name>resteasy.providers</param-name>
+        <param-value>restful.interceptor.SuitInterceptor</param-value>
+    </context-param>
+
+<!--    过滤器-->
+    <filter>
+        <filter-name>SuitRequestFilter</filter-name>
+        <filter-class>restful.filter.SuitRequestFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SuitRequestFilter</filter-name>
+        <url-pattern>/jsp/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap
+        </listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>Resteasy</servlet-name>
+        <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
+        </servlet-class>
+    </servlet>
+    <context-param>
+        <param-name>resteasy.servlet.mapping.prefix</param-name>
+        <param-value>/</param-value>
+    </context-param>
+    <servlet-mapping>
+        <servlet-name>Resteasy</servlet-name>
+        <url-pattern>/suit/*</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>SetCharacterEncoding</filter-name>
+        <filter-class>zea.web.filter.SetCharacterEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SetCharacterEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>

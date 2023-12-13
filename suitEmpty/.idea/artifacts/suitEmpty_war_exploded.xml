@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="suitEmpty:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/suitEmpty_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="suitEmpty" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="JUnit4" module-name="suitEmpty" />
+          <element id="library" level="project" name="mysql-connector-j-8.2.0" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="suitEmpty/web/Web" />
+    </root>
+  </artifact>
+</component>

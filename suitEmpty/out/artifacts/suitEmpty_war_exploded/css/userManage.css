@@ -1,0 +1,234 @@
+#userManage {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/ui/loginWindowBg19201.png) center center no-repeat scroll;
+    background-size: cover;
+    z-index: -2;
+}
+
+#userManage #table {
+    position: relative;
+
+    color: #87C8FF;
+
+    font-size: 20px;
+    text-align: center;
+    max-width: 80%;
+
+    border-radius: 5px;
+}
+
+#userManage #table::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    filter: blur(5px);
+    background-size: cover;
+    z-index: -1; /* 将伪元素放在元素的底部，以确保它位于内容之后 */
+}
+
+#userManage #table tr :is(th, td) {
+    border: 1px solid #fefcfc;
+    color: #fefcfc;
+}
+
+#userManage #table tr th {
+    padding: 5px 0;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#userManage #table tr th:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#userManage #table tr td {
+    padding: 2px 0;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+}
+#userManage #table tr td:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#userManage #table .mainInfo {
+    transition: all 0.4s;
+}
+
+#userManage #table .mainInfo:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#userManage #table .controlButton button{
+    font-size: 16px;
+    color: #fefcfc;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: #fefcfc 1px solid;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.4s all;
+}
+
+#userManage #table .controlButton button:hover {
+    letter-spacing: 3px;
+    background-color: #fefcfc;
+    color: black;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+#userManage #changeInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 410px;
+    height: auto;
+    padding: 30px 5px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    border: #fefcfc 1px solid;
+    background: #151019;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1;
+}
+
+#userManage #changeInfo h1 {
+    margin: 25px 0;
+    text-transform: uppercase;
+    color: #fefcfc;
+    font-size: calc(12px*2.5);
+    letter-spacing: 5px;
+}
+
+#userManage #changeInfo>label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 6px 0;
+}
+
+
+#userManage #changeInfo>label input {
+    background-color: transparent;
+    width: 70%;
+    color: #fefcfc;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    padding: 5px 0;
+    margin: 8px 0;
+    text-indent: 5px;
+    font-size: calc(12px*1.2);
+    letter-spacing: 1px;
+}
+
+#userManage #changeInfo>label span {
+    width: 30%;
+    font-size: calc(12px*1.2);
+    letter-spacing: 1px;
+    color: #fefcfc;
+}
+
+#userManage #changeInfo label input:focus {
+    border-bottom: 2px solid #87C8FF;
+}
+
+#userManage #changeInfo .chooseSex,
+#userManage #changeInfo .isAdmin {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fefcfc;
+    font-size: calc(12px*1.2);
+    padding-right: 20%;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#userManage #changeInfo .chooseSex label,
+#userManage #changeInfo .isAdmin label{
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#userManage #changeInfo .chooseSex label input,
+#userManage #changeInfo .isAdmin label input{
+    width: auto;
+    margin-right: 5px;
+}
+
+#userManage #changeInfo .chooseHead {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fefcfc;
+    font-size: calc(12px*1.2);
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#userManage #changeInfo .chooseHead>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#userManage #changeInfo .chooseHead input {
+    display: none;
+}
+
+#userManage #changeInfo .chooseHead img {
+    cursor: pointer;
+    margin: 5px 5px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+#userManage #changeInfo .chooseHead img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px -4px rgba(255, 255, 255, 0.6);
+}
+
+#userManage #changeInfo .chooseHead input:checked + img {
+    transform: scale(1.05);
+    border: #fefcfc 2px solid;
+}
+
+#userManage #changeInfo .controlButton button{
+    margin: 15px auto 30px;
+    font-size: 16px;
+    color: #fefcfc;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: #fefcfc 1px solid;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.4s all;
+}
+
+#userManage #changeInfo .controlButton button:hover {
+    letter-spacing: 3px;
+    background-color: #fefcfc;
+    color: black;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.6);
+}

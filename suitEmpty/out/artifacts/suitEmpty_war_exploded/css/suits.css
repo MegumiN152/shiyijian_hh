@@ -1,0 +1,86 @@
+
+#suits {
+    width: 100%;
+    min-height: 100%;
+    padding: 40px;
+    background: url("../images/ui/suitWindowBg1920.png") center center no-repeat scroll;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#suits .suitBlock {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #fefefe;
+    width: 240px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+#suits .suitBlock:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.8);
+    transform: translate(-2px, -2px);
+}
+#suits .suitBlock .Title {
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+#suits .suitBlock label {
+    display: block;
+    margin-bottom: 15px;
+}
+#suits .suitBlock span {
+    display: block;
+}
+#suits .suitBlock input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 5px;
+    color: #fefefe;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+#suits .suitBlock input:focus {
+    border-color: #151019;
+}
+#suits .suitBlock input:hover {
+    border-color: #151019;
+}
+#suits .suitBlock .control {
+    display: flex;
+    justify-content: flex-end;
+}
+#suits .suitBlock .control button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #fefefe;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+#suits .suitBlock .control button:hover {
+    filter: brightness(1.2);
+    border: #151019;
+}
+#suits .suitBlock .control .save {
+    background-color: #4caf50;
+    color: #fff;
+}
+#suits .suitBlock .control .delete {
+    background-color: #f44336;
+    color: #fff;
+}
+#suits .suitBlock .control .add {
+    background-color: #2196f3;
+    color: #fff;
+}

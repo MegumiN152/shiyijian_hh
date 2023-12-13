@@ -1,0 +1,147 @@
+#userInfo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("../images/ui/loginWindowBg19202.png") center center no-repeat scroll;
+	background-size: cover;
+	width: 100%;
+	min-height: 100%;
+	transition: all 0.5s;
+	backdrop-filter: blur(8px);
+}
+#userInfo .changeInfo {
+	position: relative;
+	width: 410px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 5px;
+	padding: 30px 5px;
+	margin-bottom: 60px;
+	border: #fefcfc 1px solid;
+}
+
+#userInfo .changeInfo::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.3);
+	filter: blur(5px);
+	background-size: cover;
+	z-index: -1; /* 将伪元素放在元素的底部，以确保它位于内容之后 */
+}
+
+#userInfo .changeInfo h1 {
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: #fefcfc;
+	font-size: calc(12px*3);
+	letter-spacing: 5px;
+}
+#userInfo .changeInfo label {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+	margin: 6px 0;
+}
+#userInfo .changeInfo label input {
+	width: 70%;
+}
+#userInfo .changeInfo label span {
+	width: 30%;
+	font-size: calc(12px*1.2);
+	letter-spacing: 1px;
+	color: #fefcfc;
+}
+
+#userInfo .changeInfo .chooseSex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+	color: #fefcfc;
+	font-size: calc(12px*1.2);
+	letter-spacing: 1px;
+	padding-right: 20%;
+}
+#userInfo .changeInfo .chooseSex label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+}
+
+#userInfo .changeInfo .chooseSex label input{
+	width: auto;
+	margin-right: 5px;
+}
+#userInfo .changeInfo .chooseHead img {
+	margin: 5px 5px;
+	transition: all 0.3s ease;
+	border-radius: 4px;
+}
+#userInfo .changeInfo .chooseHead img:hover {
+	transform: scale(1.02);
+	box-shadow: 0 12px 24px -4px rgba(255, 255, 255, 0.6);
+}
+#userInfo .changeInfo .chooseHead .headChecked {
+	border: #fefcfc 2px solid;
+}
+#userInfo .changeInfo {
+	margin: 10px auto 10px;
+}
+.disappear {
+	display: none;
+}
+#userInfo h1 {
+	margin: 25px 0;
+	text-transform: uppercase;
+	color: #fefcfc;
+	font-size: calc(12px*2.5);
+	letter-spacing: 5px;
+}
+#userInfo input {
+	background-color: transparent;
+	width: 70%;
+	color: #fefcfc;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+	padding: 5px 0;
+	margin: 8px 0;
+	text-indent: 5px;
+	font-size: calc(12px*1.2);
+	letter-spacing: 1px;
+}
+
+#userInfo input:focus {
+	border-bottom: 2px solid #87C8FF;
+}
+
+#userInfo input::placeholder {
+	color: rgba(255, 255, 255, 0.8);
+}
+#userInfo button {
+	width: 70%;
+	height: 32px;
+	margin: 15px auto 30px;
+	font-size: 16px;
+	color: #fefcfc;
+	border: none;
+	border-radius: 16px;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: 0.4s all;
+	cursor: pointer;
+}
+#userInfo button:hover {
+	letter-spacing: 3px;
+	background-color: #fefcfc;
+	color: black;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.6);
+}

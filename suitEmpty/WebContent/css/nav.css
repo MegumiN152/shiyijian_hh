@@ -1,0 +1,31 @@
+
+#nav {
+	background-color: #151019;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+#nav .bt {
+	object-fit: cover;
+	width: 80px;
+	height: 80px;
+	margin-top: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+
+#nav .bt:hover {
+	border: #fefcfc 1px solid;
+	transform: translate(-2px, -2px) scale(1.05);
+	box-shadow: 0 12px 24px -4px rgba(255, 255, 255, 0.6);
+}
+
+#nav .bt.active {
+	border: #fefcfc 1px solid;
+}

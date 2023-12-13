@@ -1,0 +1,15 @@
+#banner {
+    height: 100%;
+    width: 100%;
+    background: #151019;
+
+    vertical-align: central;
+    text-align: left;
+}
+
+#banner #userHi {
+    margin-left: 24px;
+    text-transform: uppercase;
+    color: #88C7FF;
+    font-size: 32px;
+}

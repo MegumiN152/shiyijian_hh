@@ -1,0 +1,283 @@
+#suitManage {
+	width: 100vw;
+	min-height: 100%;
+	padding: 20px;
+	background: black url("../images/ui/suitWindowBg1920.png") no-repeat center center scroll;
+	background-size: cover;
+	color: #fff;
+}
+#suitManage select,
+#suitManage option {
+	cursor: pointer;
+}
+#suitManage #query {
+	padding: 15px 20px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+#suitManage #query label {
+	margin-left: 20px;
+}
+#suitManage #query label select {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+}
+#suitManage #query label select option {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 14px;
+	background-color: #fff;
+	color: #000;
+}
+#suitManage #query button {
+	margin-left: 20px;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	background-color: #1890ff;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+#suitManage #query button:hover {
+	filter: brightness(1.2);
+	border-color: #151019;
+}
+#suitManage #mainInfo {
+	margin-top: 72px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+#suitManage #mainInfo #addSuit {
+	width: 320px;
+	margin: 20px;
+	padding: 15px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+#suitManage #mainInfo #addSuit:hover {
+	box-shadow: 0 5px 15px rgba(255, 255, 255, 0.8);
+	transform: translate(-2px, -2px);
+}
+#suitManage #mainInfo #addSuit h3 {
+	font-size: 1.6rem;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#suitManage #mainInfo #addSuit #addSuitList {
+	margin-bottom: 20px;
+	font-size: 1rem;
+}
+#suitManage #mainInfo #addSuit #addSuitList label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+#suitManage #mainInfo #addSuit #addSuitList label span {
+	vertical-align: middle;
+	border-radius: 5px 0 0 5px;
+	display: inline-block;
+	width: 75px;
+	padding: 3px 0 3px 10px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+#suitManage #mainInfo #addSuit #addSuitList label input,
+#suitManage #mainInfo #addSuit #addSuitList label select {
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid #ccc;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #fefefe;
+}
+#suitManage #mainInfo #addSuit #addSuitList label input:focus,
+#suitManage #mainInfo #addSuit #addSuitList label select:focus {
+	border-color: #151019;
+}
+#suitManage #mainInfo #addSuit #addSuitList label input:hover,
+#suitManage #mainInfo #addSuit #addSuitList label select:hover {
+	border-color: #151019;
+}
+#suitManage #mainInfo #addSuit #addSuitList label input option,
+#suitManage #mainInfo #addSuit #addSuitList label select option {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 14px;
+	background-color: #fff;
+	color: #000;
+}
+#suitManage #mainInfo #addSuit #addSuitList label:hover > span {
+	background-color: #ffffff;
+	color: #151019;
+}
+#suitManage #mainInfo #addSuit #addSuitList label:hover > input,
+#suitManage #mainInfo #addSuit #addSuitList label:hover > select {
+	border-radius: 0 5px 5px 0;
+}
+#suitManage #mainInfo #addSuit .btnControl {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+#suitManage #mainInfo #addSuit .btnControl button {
+	color: white;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: all 0.3s ease-in-out;
+}
+#suitManage #mainInfo #addSuit .btnControl button:hover {
+	filter: brightness(1.2);
+	border-color: #151019;
+}
+#suitManage #mainInfo #addSuit .btnControl .add {
+	background-color: #4caf50;
+}
+#suitManage .suitDetailed {
+	width: 480px;
+	margin: 20px;
+	padding: 15px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+#suitManage .suitDetailed:hover {
+	box-shadow: 0 5px 15px rgba(255, 255, 255, 0.8);
+	transform: translate(-2px, -2px);
+}
+#suitManage .suitDetailed > h3 {
+	font-size: 1.6rem;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#suitManage .suitDetailed .suitInfo {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	gap: 10px;
+}
+#suitManage .suitDetailed .suitInfo .suitText {
+	margin-bottom: 20px;
+	font-size: 1rem;
+}
+#suitManage .suitDetailed .suitInfo .suitText label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+#suitManage .suitDetailed .suitInfo .suitText label span {
+	vertical-align: middle;
+	border-radius: 5px 0 0 5px;
+	display: inline-block;
+	width: 75px;
+	padding: 3px 0 3px 10px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+#suitManage .suitDetailed .suitInfo .suitText label input,
+#suitManage .suitDetailed .suitInfo .suitText label select {
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid #ccc;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #fefefe;
+}
+#suitManage .suitDetailed .suitInfo .suitText label input:focus,
+#suitManage .suitDetailed .suitInfo .suitText label select:focus {
+	border-color: #151019;
+}
+#suitManage .suitDetailed .suitInfo .suitText label input:hover,
+#suitManage .suitDetailed .suitInfo .suitText label select:hover {
+	border-color: #151019;
+}
+#suitManage .suitDetailed .suitInfo .suitText label input option,
+#suitManage .suitDetailed .suitInfo .suitText label select option {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 14px;
+	background-color: #fff;
+	color: #000;
+}
+#suitManage .suitDetailed .suitInfo .suitText label:hover > span {
+	background-color: #ffffff;
+	color: #151019;
+}
+#suitManage .suitDetailed .suitInfo .suitText label:hover > input,
+#suitManage .suitDetailed .suitInfo .suitText label:hover > select {
+	border-radius: 0 5px 5px 0;
+}
+#suitManage .suitDetailed .suitInfo .suitImg {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+#suitManage .suitDetailed .suitInfo .suitImg img {
+	width: 100%;
+	max-height: 160px;
+	object-fit: contain;
+}
+#suitManage .suitDetailed .suitInfo .suitImg input {
+	display: none;
+}
+#suitManage .suitDetailed .btnControl {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+#suitManage .suitDetailed .btnControl button {
+	color: white;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: all 0.3s ease-in-out;
+}
+#suitManage .suitDetailed .btnControl button:hover {
+	filter: brightness(1.2);
+	border-color: #151019;
+}
+#suitManage .suitDetailed .btnControl .save {
+	background-color: #4caf50;
+}
+#suitManage .suitDetailed .btnControl .delete {
+	background-color: #f44336;
+}

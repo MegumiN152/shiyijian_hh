@@ -1,0 +1,211 @@
+#mySuits {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #16111B;
+	color: #fefefe;
+}
+#mySuits #display {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-items: flex-start;
+	padding: 20px;
+	position: relative;
+}
+#mySuits #display .selectedSuit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px;
+	padding: 10px;
+	width: 200px;
+	height: 160px;
+	border-radius: 5px;
+	border: 1px solid #fefefe;
+	background-color: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	transition: all 0.3s ease-in-out;
+	z-index: 100;
+}
+#mySuits #display .selectedSuit > div {
+	width: 100%;
+	display: flex;
+	padding-left: 10px;
+	margin: 3px;
+}
+#mySuits #display .selectedSuit > div > span {
+	padding: 2px 10px;
+	text-align: left;
+	color: #fefefe;
+	border: 1px solid #fefefe;
+	border-radius: 5px;
+}
+#mySuits #display .selectedSuit > div > .code {
+	background-color: #af2527;
+}
+#mySuits #display .selectedSuit > div > .name {
+	background-color: #657b8d;
+}
+#mySuits #display .selectedSuit > div > .price {
+	background-color: #abb1b7;
+}
+#mySuits #display .selectedSuit .control {
+	display: flex;
+	justify-content: flex-end;
+}
+#mySuits #display .selectedSuit .control > span:nth-child(1) {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+#mySuits #display .selectedSuit .control img {
+	width: 24px;
+	object-fit: contain;
+	border-radius: 5px;
+}
+#mySuits #display .selectedSuit .control > img {
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+#mySuits #display .selectedSuit .control > img:hover {
+	transform: scale(1.05);
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 1px solid #fefefe;
+}
+#mySuits #display #modelDisplay {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 354px;
+	height: 600px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+#mySuits #display #modelDisplay img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+#mySuits #display #sumPrice {
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	border: 1px solid #fefefe;
+	z-index: 100;
+}
+#mySuits #addSuits {
+	width: 200px;
+	min-width: 200px;
+}
+#mySuits #addSuits #querySuits {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 5px 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	border-bottom-left-radius: 5px;
+	color: #fefefe;
+}
+#mySuits #addSuits #querySuits #suitType {
+	font-size: 18px;
+	margin-left: 10px;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+#mySuits #addSuits #toBeSelectedSuits {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 5px;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+	background-color: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	border: 1px solid #fefefe;
+	border-radius: 5px;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit .addToModel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	border: 2px solid red;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit .addToModel:hover {
+	background-color: red;
+	border-color: #fefefe;
+	border-radius: 5px;
+	transform: scale(1.05);
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit .addToModel > div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fefefe;
+	transition: all 0.3s ease-in-out;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit .addToModel > div:nth-child(1) {
+	height: 24px;
+	width: 8px;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit .addToModel > div:nth-child(2) {
+	height: 8px;
+	width: 24px;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit img {
+	width: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit hr {
+	width: 100%;
+	margin-bottom: 5px;
+	border: 1px solid #fefefe;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit > div {
+	width: 100%;
+	display: flex;
+	padding-left: 10px;
+	margin-bottom: 2px;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit > div > span {
+	padding: 2px 10px;
+	text-align: left;
+	color: #fefefe;
+	border: 1px solid #fefefe;
+	border-radius: 5px;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit > div > .code {
+	background-color: #af2527;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit > div > .name {
+	background-color: #657b8d;
+}
+#mySuits #addSuits #toBeSelectedSuits .selectingSuit > div > .price {
+	background-color: #abb1b7;
+}
